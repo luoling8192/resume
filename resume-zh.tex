@@ -13,24 +13,17 @@
 
 \name{洛灵}{}
 
-\keywords{NodeJS, Vue, React, Vite, TailwindCSS}
-
-% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
-% \tagline{<current-position>}
+\tagline{前端开发工程师}
 
 % Supported shapes: circular(default), square
 % \photo[<shape>]{<width>}{<filename>}
 
 \profile{
-  \mobile{177-6440-4156}
   \email{me@luoling.moe}
   \github{luoling8192} \\
-  \icontext{\faBriefcase}{前端开发工程师}
-  \birthday{2003-11}
   \address{苏州}
-  % Custom information:
-  % \icontext{<icon>}{<text>}
-  % \iconlink{<icon>}{<link>}{<text>}
+  \birthday{2003-11}
+  \icontext{\faWeixin}{@luoling8192}
 }
 
 \begin{document}
@@ -39,15 +32,16 @@
 %======================================================================
 % Summary & Objectives
 %======================================================================
+\sectionTitle{概述}{\faInfo}
 {\onehalfspacing\hspace{2em}%
-
-曾获全国青少年信息学奥林匹克竞赛联赛三等奖， 能熟练阅读英文技术文档。
-拥有 5 年以上项目开发经验，熟练使用 Linux 系统，熟练掌握前端开发技术，积极参与开源项目，致力于开发创新技术解决方案。
-
+曾获全国青少年信息学奥林匹克竞赛联赛三等奖，能熟练阅读英文技术文档。
+拥有 5 年以上项目开发经验，熟练使用 Linux 系统，掌握前端开发技术，积极参与开源项目，致力于开发创新技术解决方案。
+关键词: NodeJS, Vue, React, Vite, TailwindCSS
 \par}
 
+
 %======================================================================
-\sectionTitle{技能(按熟练度排序)}{\faWrench}
+\sectionTitle{技能}{\faWrench}
 %======================================================================
 \begin{competences}
   \comptence{语言}{%
@@ -57,7 +51,7 @@
     Vue, Vite, Pinia, TailwindCSS, React, Redux, jQuery, HTML/CSS
   }
   \comptence{后端}{%
-    NodeJS, Cloudflare Worker, Electron,Express, MySQL, PostgreSQL, Redis
+    NodeJS, Cloudflare Worker, Electron, Express, MySQL, PostgreSQL, Redis
   }
   \comptence{工具}{%
     Linux, Git, ChatGPT(RAG), Bash, Docker, Kubernetes
@@ -70,34 +64,44 @@
 \begin{projects}
   \project{2024-02}[2024-05]{预览地址}{\link{https://portforward.zeroteam.top}{https://portforward.zeroteam.top}}{PortForwardGo}{
     \begin{itemize}
-      \item 流量转发面板，日活 3K+，除了实现基本用户管理员面板外，还实现了商店(对接多个支付平台)、服务器状态监控(Websocket)、流量统计图表(ECharts)等功能。
-      \item 使用 Vue3 + Vite 开发，使用 TailwindCSS 作为 CSS 框架，并使用 Pinia 作为状态管理库。
-      \item 高度抽象组件，所有复杂表单都可以通过 JSON 配置文件生成，且能保持相当高的灵活程度。
+      \item 项目背景：开发了一个流量转发面板，旨在帮助用户便捷地管理和监控流量转发，项目日活用户超过 3,000。
+      \item 技术细节：使用 Vue3 + Vite 进行前端开发，采用 TailwindCSS 作为 CSS 框架，并使用 Pinia 进行状态管理，实现了高效的前端架构。
+      \item 组件系统：设计了高度抽象的组件系统，通过 JSON 配置文件生成复杂表单，保证了高灵活性，减少了开发和维护成本。
+      \item 支付集成：实现了多种支付方式集成(如支付宝、Stripe等)，提升了用户支付体验和平台的商业化能力。
+      \item 实时监控：利用 WebSocket 实时监控服务器状态，及时响应异常情况，保证了系统的高可用性和稳定性。
+      \item 数据可视化：使用 ECharts 进行数据可视化，提供详细的流量统计和分析图表，帮助用户直观了解流量使用情况。
     \end{itemize}
   }[Vue3, Vite, NaiveUI, TailwindCSS, Pinia, ECharts]
 
   \separator{0.5ex}
   \project{2023-09}[2023-10]{预览地址}{\link{https://openinsider.pages.dev}{https://openinsider.pages.dev}}{OpenInsider+}{
     \begin{itemize}
-      \item 美股持有人查询网站，使用后端爬虫获取页面，并用 Cheerio 提取所需数据。
-      \item 通过 Cloudflare Worker 搭建 Severless 的后端服务，并使用 KV 存储用户、交易记录等数据。
-      \item 通过 Cron 定时监测股票持有人变动，并通过 Telegram Bot 向对应用户发送信息。
+      \item 项目背景：开发了一个美股持有人查询平台，旨在提升用户对股票市场的透明度和分析能力。
+      \item 功能实现：用户可以通过输入股票代码查询持有人变动信息，使用后端爬虫获取实时数据，并通过 Cheerio 提取和处理所需信息，确保了数据的准确性和实时性。
+      \item 技术架构：通过 Cloudflare Worker 搭建 Serverless 后端服务，利用 KV 存储用户数据和交易记录，系统高效且可扩展。
+      \item 筛选功能：设计了多个筛选功能，包括交易日期、价格区间和价值区间，帮助用户精确查找信息。
+      \item 通知系统：使用 Cron 定时监测股票持有人变动，通过 Telegram Bot 发送异动通知，确保用户及时获取重要信息。
     \end{itemize}
   }[Vue3, Cheerio, Wrangler, Telegram Bot]
 
   \separator{0.5ex}
   \project{2021-07-11}[2021-07-16]{Github}{\link{https://github.com/luoling8192/lnry}{https://github.com/luoling8192/lnry}}{羊奶公司网站}{
     \begin{itemize}
-      \item 羊奶公司网站，采用响应式布局，使用 Umi.js 开发，后端使用 Leancloud 作为云数据库，并支持新闻(Markdown)、图片(OSS)、留言评论功能。
+      \item 项目背景：为羊奶公司开发了一个响应式网站，提升公司的线上形象和用户互动。
+      \item 功能实现：提供新闻发布、图片展示和留言评论功能，使用 Umi.js 进行前端开发，后端采用 Leancloud 作为云数据库，实现数据存储和管理。
+      \item 留言功能：增加用户留言和反馈功能，促进公司与用户之间的互动，提升客户满意度。
+      \item 数据管理：利用 Leancloud 提供的 BaaS 服务，实现数据的高效管理和维护，提升了系统的可扩展性和可靠性。
     \end{itemize}
   }[React, UmiJS, Leancloud]
 
-  % \separator{0.5ex}
-  % \project{2020-03}[2020-05]{Github}{\link{https://github.com/luoling8192/Group-Website}{https://github.com/luoling8192/Group-Website}}{信息社团网站}{
-  %   \begin{itemize}
-  %     \item 使用 PHP 编写，实现了后台管理面板，用户登录注册，查看发布新闻，图片上传(OSS)，流量统计等功能。
-  %   \end{itemize}
-  % }[PHP, JavaScript]
+  \separator{0.5ex}
+  \project{2020-03}[2020-05]{Github}{\link{https://github.com/luoling8192/Group-Website}{https://github.com/luoling8192/Group-Website}}{信息社团网站}{
+    \begin{itemize}
+      \item 项目背景：为信息社团开发了一个管理网站，增强社团的管理效率。
+      \item 功能实现：实现了后台管理、用户登录注册、新闻发布、图片上传(OSS)等功能，使用 PHP 进行后端开发，前端采用 jQuery 实现动态交互。
+      \item 访客统计：提供详细的访客统计功能，帮助社团了解网站访问情况，优化内容和功能。
+    \end{itemize}
+  }[PHP, jQuery]
 
 \end{projects}
 
@@ -105,20 +109,27 @@
 \sectionTitle{开源经历}{\faCode}
 %======================================================================
 \begin{projects}
-  % \project{2022-05}[2023-04]{130+ stars}{主要开发人员}{ClassTools}{
-  %   \begin{itemize}
-  %     \item \link{https://github.com/clansty/ClassTools}{https://github.com/clansty/ClassTools}
-  %     \item 一个用在班级电脑上面的教室系统，通过 Hook 系统的 Explorer 进程，从而实现了动态壁纸功能，并已上架微软商店。
-  %     \item 实现了高考倒计时、作业、课程表、值日生等看板，并提供简单易用的设置界面。
-  %   \end{itemize}
-  % }[Vue3, Electron]
+  \project{2022-05}[2023-04]{130+ stars}{主要开发人员}{ClassTools}{
+    \begin{itemize}
+      \item \link{https://github.com/clansty/ClassTools}{https://github.com/clansty/ClassTools}
+      \item 项目背景：开发了一个用于班级电脑的教室系统，通过 Hook 系统的 Explorer 进程，实现动态壁纸功能，并已上架微软商店。
+      \item 主要功能：提供高考倒计时、作业、课程表和值日生看板，具有简单易用的设置界面。
+      \item 实时天气：对接和风天气 API 接口，可以显示 1-7 天的天气预报，并提供实时天气预警。
+      \item 更新机制：实现了 Electron 自带更新器，确保用户可以方便地获取最新版本的功能和修复。
+      \item 数据统计：通过发送统计日志实现日活统计，帮助开发团队了解用户活跃度和使用情况。
+    \end{itemize}
+  }[Vue3, Electron]
 
   \separator{0.5ex}
   \project{2021-08}[2021-10]{3.3k+ stars}{前端主要开发人员}{Icalingua++}{
     \begin{itemize}
       \item \link{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}
-      \item 一个第三方 QQ 客户端，使用 Electron 开发，通过对接 QQ 协议库，不仅能够正常聊天，还实现了仅有手机 QQ 才支持的戳一戳等功能。
-      \item 通过 FFmpeg 来处理音视频，并使用 SocketIO 来实现前后端通信。对接 Aria2 实现群文件多线程下载，支持 MongoDB、MySQL、PostgreSQL、SQLite 作为聊天记录存储的数据库。
+      \item 项目背景：开发了一个第三方 QQ 客户端，使用 Electron 开发，通过对接 QQ 协议库，实现正常聊天以及仅有手机 QQ 才支持的戳一戳等功能，提升了用户的聊天体验。
+      \item 主要功能：通过 FFmpeg 处理音视频，使用 SocketIO 实现前后端通信，对接 Aria2 实现群文件多线程下载，支持 MongoDB、MySQL、PostgreSQL 和 SQLite 作为聊天记录存储的数据库。
+      \item 多平台支持：项目支持多平台运行，包括 Windows、Mac 和 Linux 系统，扩大了用户群体。
+      \item 高度可定制性：支持运行自定义脚本、样式、主题、插件等，可以轻松定制和扩展功能。
+      \item 数据导出：支持导出 QQ 聊天记录，并支持导出为 HTML 格式，方便用户进行离线浏览。
+      \item Bridge 系统：本项目支持部署在服务器上运行，可以在任意客户端上对接使用，实现离线获取聊天记录功能。
     \end{itemize}
   }[Vue, Electron, SocketIO, FFmpeg]
 \end{projects}
