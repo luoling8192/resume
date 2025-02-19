@@ -6,22 +6,22 @@
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2024, RainbowBird \hspace{0.5em}
+  \faCopyright{} 2025, RainbowBird \hspace{0.5em}
   \creativecommons{by}{3.0} \hspace{0.5em}
   \faEdit{} \today
 }
 
 \name{洛灵}{}
 
-\tagline{前端开发工程师}
+\tagline{Go 开发工程师 / 全栈开发工程师}
 
 % Supported shapes: circular(default), square
 % \photo[<shape>]{<width>}{<filename>}
 
 \profile{
-  \email{me@luoling.moe}
+  \email{rbxin2003@outlook.com}
   \github{luoling8192} \\
-  \address{苏州}
+  \address{远程}
   \birthday{2003-11}
   \icontext{\faWeixin}{@luoling8192}
 }
@@ -34,9 +34,9 @@
 %======================================================================
 \sectionTitle{概述}{\faInfo}
 {\onehalfspacing\hspace{2em}%
-曾获全国青少年信息学奥林匹克竞赛联赛三等奖，能熟练阅读英文技术文档。
-拥有 5 年以上项目开发经验，熟练使用 Linux 系统，掌握前端开发技术，积极参与开源项目，致力于开发创新技术解决方案。
-关键词: NodeJS, Vue, React, Vite, TailwindCSS
+具备基本的区块链开发、LLM 方面相关知识，有 Golang、k8s 开发经验。
+拥有 5 年以上前端开发经验， 1 年全栈开发经验，熟练掌握前端开发技术栈和 Linux 系统运维。
+擅长使用函数式编程思想，可以流畅阅读英文文档，学习能力强，有多个开源项目贡献经历，致力追求最佳实践。
 \par}
 
 
@@ -44,94 +44,157 @@
 \sectionTitle{技能}{\faWrench}
 %======================================================================
 \begin{competences}
-  \comptence{语言}{%
-    TypeScript, JavaScript, C++, Python, PHP, Java, Go, CSharp
+  \comptence{\textbf{区块链运维}}{
+    AWS \quad
+    Ethereum 节点集群 \quad
+    Kubernetes 编排 \quad
+    Prometheus / Grafana 监控体系
   }
-  \comptence{前端}{%
-    Vue, Vite, Pinia, TailwindCSS, React, Redux, jQuery, HTML/CSS
+  \comptence{\textbf{Go 开发}}{
+    Echo (gRPC/REST) \quad
+    Ent ORM \quad
+    Fx \quad
+    Kafka \quad
+    PostgreSQL \quad
+    Redis
   }
-  \comptence{后端}{%
-    NodeJS, Cloudflare Worker, Electron, Express, MySQL, PostgreSQL, Redis
+  \comptence{\textbf{云原生}}{
+    Docker 容器化 \quad
+    Kubernetes 运维 \quad
+    CI/CD 流水线 \quad
+    OpenTelemetry 可观测性
   }
-  \comptence{工具}{%
-    Linux, Git, ChatGPT(RAG), Bash, Docker, Kubernetes
+  \comptence{编程语言}{
+    TypeScript / NodeJS \quad
+    Go (1.20+) \quad
+    Python \quad
+    SQL
+  }
+  \comptence{后端框架}{
+    Express \quad
+    HonoJS \quad
+    Drizzle \quad
+    Supabase \quad
+    Serverless
+  }
+  \comptence{前端框架}{
+    Vue3 \quad
+    React \quad
+    Vite \quad
+    UnoCSS \quad
+    Pinia \quad
+    Electron \quad
+    Monorepo
   }
 \end{competences}
 
 %======================================================================
-\sectionTitle{独立项目}{\faBriefcase}
+\sectionTitle{工作经历}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2024-06]%
+    {至今}%
+    {区块链运维 / Go 开发工程师 @ 八位猫（上海）}%
+    [\begin{itemize}
+      \item \textbf{区块链基础设施}
+        \begin{itemize}
+          \item 使用 AWS EC2 部署和维护 Ethereum / Astar 等节点集群。
+          \item 基于 k8s （Pod / ConfigMap / Service）编排节点服务，实现滚动更新和自动扩缩容。
+          \item 搭建 Prometheus 监控告警体系，构建 Grafana 数据看板，实现节点健康状态实时监控。
+          \item 开发高并发区块链索引工具，采用 Goroutine 池处理区块数据
+        \end{itemize}
+      \item \textbf{区块链交易事件处理系统}
+        \begin{itemize}
+          \item 处理 Ethereum 主网交易、区块更新、转账等事件。
+          \item 使用 Fx 进行依赖注入、生命周期管理。
+          \item 使用 Ent 连接 PostgreSQL，使用复合索引优化查询效率。
+          \item 使用 Echo 实现基于 gRPC / Protobuf 的微服务通信和 Restful 网关。
+          \item 使用 Kafka 实现消息队列，并使用 Redis 缓存热点数据。
+          \item 使用 OpenTelemetry 实现链路追踪，并使用 Prometheus 监控告警。
+          \item 使用分布式事务处理，解决并发冲突、保证幂等性。
+          \item 使用 decimal 实现高精度数值计算，保障金融级计算准确性。
+          \item 通过连接池优化实现 5k+ QPS 的稳定处理能力。
+          \item 实现核心模块单元测试 95\% 覆盖率。
+        \end{itemize}
+      \end{itemize}]
+\end{experiences}
+
+%======================================================================
+\sectionTitle{项目经历}{\faBriefcase}
 %======================================================================
 \begin{projects}
-  \project{2024-02}[2024-05]{预览地址}{\link{https://portforward.zeroteam.top}{https://portforward.zeroteam.top}}{PortForwardGo}{
+  \project{2024-07}[2024-12]{后端核心开发者}{\link{https://guii.ai}{https://guii.ai}}{Guii.AI}{
     \begin{itemize}
-      \item 项目背景：开发了一个流量转发面板，旨在帮助用户便捷地管理和监控流量转发，项目日活用户超过 3,000。
-      \item 技术细节：使用 Vue3 + Vite 进行前端开发，采用 TailwindCSS 作为 CSS 框架，并使用 Pinia 进行状态管理，实现了高效的前端架构。
-      \item 组件系统：设计了高度抽象的组件系统，通过 JSON 配置文件生成复杂表单，保证了高灵活性，减少了开发和维护成本。
-      \item 支付集成：实现了多种支付方式集成(如支付宝、Stripe等)，提升了用户支付体验和平台的商业化能力。
-      \item 实时监控：利用 WebSocket 实时监控服务器状态，及时响应异常情况，保证了系统的高可用性和稳定性。
-      \item 数据可视化：使用 ECharts 进行数据可视化，提供详细的流量统计和分析图表，帮助用户直观了解流量使用情况。
+      \item 一款 AI 赋能的前端开发结对编程工具，帮助开发者通过自然语言直接生成可视化的前端界面。
+      \item 在 2024 年 AdventureX 黑客松中斩获主题赛道一等奖及其他三个赛道一等奖。
+      \item 作为后端核心开发者，负责提示词，工作流和 Agent 编排的开发。
+    \end{itemize}
+  }[HonoJS, Supabase, PostgreSQL, Redis, Drizzle, OpenRouter]
+
+  \separator{0.5ex}
+  \project{2024-02}[2024-05]{独立开发}{\link{https://portforward.zeroteam.top}{https://portforward.zeroteam.top}}{PortForwardGo}{
+    \begin{itemize}
+      \item 流量转发管理平台，日活跃用户 3k+。
+      \item 设计高度抽象的组件系统，实现灵活的界面生成，降低 70\% 开发维护成本。
+      \item 采用 Vue3 + Vite 前端架构，实现组件化开发和状态管理，整合多支付渠道和数据可视化。
     \end{itemize}
   }[Vue3, Vite, NaiveUI, TailwindCSS, Pinia, ECharts]
 
   \separator{0.5ex}
-  \project{2023-09}[2023-10]{预览地址}{\link{https://openinsider.pages.dev}{https://openinsider.pages.dev}}{OpenInsider+}{
+  \project{2023-09}[2023-10]{独立开发}{\link{https://openinsider.pages.dev}{https://openinsider.pages.dev}}{OpenInsider+}{
     \begin{itemize}
-      \item 项目背景：开发了一个美股持有人查询平台，旨在提升用户对股票市场的透明度和分析能力。
-      \item 功能实现：用户可以通过输入股票代码查询持有人变动信息，使用后端爬虫获取实时数据，并通过 Cheerio 提取和处理所需信息，确保了数据的准确性和实时性。
-      \item 技术架构：通过 Cloudflare Worker 搭建 Serverless 后端服务，利用 KV 存储用户数据和交易记录，系统高效且可扩展。
-      \item 筛选功能：设计了多个筛选功能，包括交易日期、价格区间和价值区间，帮助用户精确查找信息。
-      \item 通知系统：使用 Cron 定时监测股票持有人变动，通过 Telegram Bot 发送异动通知，确保用户及时获取重要信息。
+      \item 美股持有人信息查询平台，支持订阅股票持有人变动通知。
+      \item 基于 Cloudflare Worker 构建 Serverless 服务，配合 KV 存储实现高性能数据管理。
+      \item 结合 Cron 任务和 Telegram Bot，实现股票持有人变动的实时监控和智能提醒。
     \end{itemize}
   }[Vue3, Cheerio, Wrangler, Telegram Bot]
-
-  \separator{0.5ex}
-  \project{2021-07-11}[2021-07-16]{Github}{\link{https://github.com/luoling8192/lnry}{https://github.com/luoling8192/lnry}}{羊奶公司网站}{
-    \begin{itemize}
-      \item 项目背景：为羊奶公司开发了一个响应式网站，提升公司的线上形象和用户互动。
-      \item 功能实现：提供新闻发布、图片展示和留言评论功能，使用 Umi.js 进行前端开发，后端采用 Leancloud 作为云数据库，实现数据存储和管理。
-      \item 留言功能：增加用户留言和反馈功能，促进公司与用户之间的互动，提升客户满意度。
-      \item 数据管理：利用 Leancloud 提供的 BaaS 服务，实现数据的高效管理和维护，提升了系统的可扩展性和可靠性。
-    \end{itemize}
-  }[React, UmiJS, Leancloud]
-
-  \separator{0.5ex}
-  \project{2020-03}[2020-05]{Github}{\link{https://github.com/luoling8192/Group-Website}{https://github.com/luoling8192/Group-Website}}{信息社团网站}{
-    \begin{itemize}
-      \item 项目背景：为信息社团开发了一个管理网站，增强社团的管理效率。
-      \item 功能实现：实现了后台管理、用户登录注册、新闻发布、图片上传(OSS)等功能，使用 PHP 进行后端开发，前端采用 jQuery 实现动态交互。
-      \item 访客统计：提供详细的访客统计功能，帮助社团了解网站访问情况，优化内容和功能。
-    \end{itemize}
-  }[PHP, jQuery]
-
 \end{projects}
 
 %======================================================================
 \sectionTitle{开源经历}{\faCode}
 %======================================================================
 \begin{projects}
-  \project{2022-05}[2023-04]{130+ stars}{主要开发人员}{ClassTools}{
+  \project{2025-02}[至今]{100+ stars}{个人项目}{Telegram Search}{
     \begin{itemize}
-      \item \link{https://github.com/clansty/ClassTools}{https://github.com/clansty/ClassTools}
-      \item 项目背景：开发了一个用于班级电脑的教室系统，通过 Hook 系统的 Explorer 进程，实现动态壁纸功能，并已上架微软商店。
-      \item 主要功能：提供高考倒计时、作业、课程表和值日生看板，具有简单易用的设置界面。
-      \item 实时天气：对接和风天气 API 接口，可以显示 1-7 天的天气预报，并提供实时天气预警。
-      \item 更新机制：实现了 Electron 自带更新器，确保用户可以方便地获取最新版本的功能和修复。
-      \item 数据统计：通过发送统计日志实现日活统计，帮助开发团队了解用户活跃度和使用情况。
+      \item \link{https://github.com/luoling8192/tg-search}{https://github.com/luoling8192/tg-search}
+      \item 基于 OpenAI 向量技术实现语义搜索，支持多种消息类型的智能检索。
+      \item 设计高性能数据同步系统，支持 Bot / Client 双模式消息采集和增量更新。
+      \item 实现灵活的消息管理体系，支持文件夹分类、导入导出和数据统计分析。
     \end{itemize}
-  }[Vue3, Electron]
+  }[PgVector, PostgreSQL]
 
   \separator{0.5ex}
-  \project{2021-08}[2021-10]{3.3k+ stars}{前端主要开发人员}{Icalingua++}{
+  \project{2021-08}[2021-10]{3.4k+ stars}{前端核心开发者}{Icalingua++}{
     \begin{itemize}
       \item \link{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}
-      \item 项目背景：开发了一个第三方 QQ 客户端，使用 Electron 开发，通过对接 QQ 协议库，实现正常聊天以及仅有手机 QQ 才支持的戳一戳等功能，提升了用户的聊天体验。
-      \item 主要功能：通过 FFmpeg 处理音视频，使用 SocketIO 实现前后端通信，对接 Aria2 实现群文件多线程下载，支持 MongoDB、MySQL、PostgreSQL 和 SQLite 作为聊天记录存储的数据库。
-      \item 多平台支持：项目支持多平台运行，包括 Windows、Mac 和 Linux 系统，扩大了用户群体。
-      \item 高度可定制性：支持运行自定义脚本、样式、主题、插件等，可以轻松定制和扩展功能。
-      \item 数据导出：支持导出 QQ 聊天记录，并支持导出为 HTML 格式，方便用户进行离线浏览。
-      \item Bridge 系统：本项目支持部署在服务器上运行，可以在任意客户端上对接使用，实现离线获取聊天记录功能。
+      \item 深度集成 QQ 协议，采用 FFmpeg 处理多媒体，SocketIO 实现实时通信。
+      \item 设计 Bridge 系统支持服务器部署，实现多端同步和离线消息存储。
+      \item 实现灵活的插件架构，支持自定义脚本、样式和主题。
     \end{itemize}
   }[Vue, Electron, SocketIO, FFmpeg]
 \end{projects}
+
+%======================================================================
+\sectionTitle{其他项目}{\faCube}
+%======================================================================
+\begin{itemize}
+  \item 基于 LLM 的智能 Minecraft 机器人，能理解自然语言指令并与玩家交互。
+    \link{https://github.com/moeru-ai/airi-minecraft}{\texttt{Airi-Minecraft 2025-01}}
+  \item 一个用在班级电脑上面的动态壁纸系统，显示高考倒计时、作业、课程表、值日生等看板。
+    \link{https://github.com/luoling8192/ClassTools}{\texttt{ClassTools 2022-05}}
+\end{itemize}
+
+%======================================================================
+\sectionTitle{获奖经历}{\faTrophy}
+%======================================================================
+\begin{itemize}
+  \item 2024-08
+    \link{https://www.bilibili.com/video/BV1WtHQewEu4}{\texttt{AI.DEA \textbf{一等奖}}}
+  \item 2024-07
+    \link{https://github.com/guiiai/guii-devtools}{\texttt{AdvantureX 主题赛道 \textbf{一等奖}}}
+  \item 2020-12
+    \link{https://www.noi.cn}{\texttt{全国青少年信息学奥林匹克竞赛联赛 \textbf{三等奖}}}
+\end{itemize}
 
 \end{document}
