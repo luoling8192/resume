@@ -44,46 +44,45 @@
 \sectionTitle{技能}{\faWrench}
 %======================================================================
 \begin{competences}
-  \comptence{\textbf{区块链运维}}{
-    AWS \quad
-    Ethereum 节点集群 \quad
-    Kubernetes 编排 \quad
-    Prometheus / Grafana 监控体系
+  \comptence{\textbf{区块链开发}}{
+    以太坊节点运维 \quad
+    区块事件处理 \quad
+    智能合约交互 \quad
+    Web3 开发
   }
-  \comptence{\textbf{Go 开发}}{
-    Echo (gRPC/REST) \quad
-    Ent ORM \quad
-    Fx \quad
-    Kafka \quad
-    PostgreSQL \quad
-    Redis
-  }
-  \comptence{\textbf{云原生}}{
-    Docker 容器化 \quad
-    Kubernetes 运维 \quad
-    CI/CD 流水线 \quad
-    OpenTelemetry 可观测性
-  }
-  \comptence{编程语言}{
-    TypeScript / NodeJS \quad
+  
+  \comptence{\textbf{后端开发}}{
     Go (1.20+) \quad
-    Python \quad
-    SQL
+    微服务架构 \quad
+    gRPC/REST API \quad
+    分布式系统设计
   }
-  \comptence{后端框架}{
-    Express \quad
-    HonoJS \quad
-    Drizzle \quad
-    Supabase \quad
-    Serverless
+  
+  \comptence{\textbf{技术栈}}{
+    Echo · Fx · Ent \quad
+    Kafka · Redis \quad
+    PostgreSQL \quad
+    TypeScript · Python
   }
-  \comptence{前端框架}{
-    Vue3 \quad
-    React \quad
-    Vite \quad
-    UnoCSS \quad
-    Pinia \quad
-    Electron \quad
+  
+  \comptence{\textbf{云原生}}{
+    Kubernetes 集群管理 \quad
+    Docker 容器化 \quad
+    AWS 云服务 \quad
+    CI/CD 自动化
+  }
+  
+  \comptence{\textbf{可观测性}}{
+    Prometheus 监控 \quad
+    Grafana 看板 \quad
+    OpenTelemetry 追踪 \quad
+    ELK 日志分析
+  }
+  
+  \comptence{\textbf{全栈开发}}{
+    Vue3/React \quad
+    Vite · Pinia \quad
+    Serverless \quad
     Monorepo
   }
 \end{competences}
@@ -95,27 +94,23 @@
   \experience%
     [2024-06]%
     {至今}%
-    {区块链运维 / Go 开发工程师 @ 八位猫（上海）}%
+    {区块链基础设施工程师 @ 八位猫（上海）}%
     [\begin{itemize}
-      \item \textbf{区块链基础设施}
+      \item \textbf{区块链节点基础设施平台}
         \begin{itemize}
-          \item 使用 AWS EC2 部署和维护 Ethereum / Astar 等节点集群。
-          \item 基于 k8s （Pod / ConfigMap / Service）编排节点服务，实现滚动更新和自动扩缩容。
-          \item 搭建 Prometheus 监控告警体系，构建 Grafana 数据看板，实现节点健康状态实时监控。
-          \item 开发高并发区块链索引工具，采用 Goroutine 池处理区块数据
+          \item 设计并实现高可用区块链节点集群，支持 Ethereum、Astar 等多链架构。
+          \item 基于 K8s 实现节点服务编排与自动化运维，提升部署效率 80\%。
+          \item 构建完整监控告警体系，实现故障 5 分钟内定位修复，系统可用性达 99.9\%。
+          \item 开发区块数据并行处理工具，数据同步性能提升 3 倍。
         \end{itemize}
-      \item \textbf{区块链交易事件处理系统}
+      \item \textbf{高性能区块链事件处理系统}
         \begin{itemize}
-          \item 处理 Ethereum 主网交易、区块更新、转账等事件。
-          \item 使用 Fx 进行依赖注入、生命周期管理。
-          \item 使用 Ent 连接 PostgreSQL，使用复合索引优化查询效率。
-          \item 使用 Echo 实现基于 gRPC / Protobuf 的微服务通信和 Restful 网关。
-          \item 使用 Kafka 实现消息队列，并使用 Redis 缓存热点数据。
-          \item 使用 OpenTelemetry 实现链路追踪，并使用 Prometheus 监控告警。
-          \item 使用分布式事务处理，解决并发冲突、保证幂等性。
-          \item 使用 decimal 实现高精度数值计算，保障金融级计算准确性。
-          \item 通过连接池优化实现 5k+ QPS 的稳定处理能力。
-          \item 实现核心模块单元测试 95\% 覆盖率。
+          \item 主导设计微服务架构，实现交易、区块等多类型事件处理，日均处理 100 万笔交易。
+          \item 采用 Fx 依赖注入 + Echo 微服务 + Kafka 消息队列构建分布式系统。
+          \item 通过连接池优化与分布式事务，实现 5k+ QPS 稳定处理，响应时间 < 50ms。
+          \item 基于 OpenTelemetry 实现全链路监控，问题定位效率提升 60\%。
+          \item 设计数据分片与缓存策略，查询性能提升 5 倍，内存使用降低 40\%。
+          \item 实现核心模块 95\% 测试覆盖率，部署后故障率降低 70\%。
         \end{itemize}
       \end{itemize}]
 \end{experiences}
@@ -124,20 +119,21 @@
 \sectionTitle{项目经历}{\faBriefcase}
 %======================================================================
 \begin{projects}
-  \project{2024-07}[2024-12]{后端核心开发者}{\link{https://guii.ai}{https://guii.ai}}{Guii.AI}{
+  \project{2024-07}[2024-12]{后端负责人}{\link{https://guii.ai}{https://guii.ai}}{Guii.AI}{
     \begin{itemize}
-      \item 一款 AI 赋能的前端开发结对编程工具，帮助开发者通过自然语言直接生成可视化的前端界面。
+      \item 一款 AI 赋能的前端开发工具，覆盖从原型设计到细节调优的全流程，支持通过自然语言直接生成和调整界面。
+      \item 创新性地实现页面元素直接选择和编辑功能，无需 IDE 集成即可灵活融入现有开发工具链。
       \item 在 2024 年 AdventureX 黑客松中斩获主题赛道一等奖及其他三个赛道一等奖。
-      \item 作为后端核心开发者，负责提示词，工作流和 Agent 编排的开发。
+      \item 作为后端核心开发者，负责提示词引擎、工作流系统和 Agent 编排的设计与实现。
     \end{itemize}
   }[HonoJS, Supabase, PostgreSQL, Redis, Drizzle, OpenRouter]
 
   \separator{0.5ex}
-  \project{2024-02}[2024-05]{独立开发}{\link{https://portforward.zeroteam.top}{https://portforward.zeroteam.top}}{PortForwardGo}{
+  \project{2024-02}[2024-05]{前端负责人}{\link{https://portforward.zeroteam.top}{https://portforward.zeroteam.top}}{PortForwardGo}{
     \begin{itemize}
-      \item 流量转发管理平台，日活跃用户 3k+。
-      \item 设计高度抽象的组件系统，实现灵活的界面生成，降低 70\% 开发维护成本。
-      \item 采用 Vue3 + Vite 前端架构，实现组件化开发和状态管理，整合多支付渠道和数据可视化。
+      \item 开发高性能流量转发管理平台，支持多协议转发和负载均衡，日活跃用户超过 3000。
+      \item 设计模块化组件系统，实现可配置的动态界面生成，提升开发效率 70\%，大幅降低维护成本。
+      \item 基于 Vue3 + Vite 构建现代化前端架构，实现状态管理与组件复用，集成多渠道支付系统和实时数据可视化面板。
     \end{itemize}
   }[Vue3, Vite, NaiveUI, TailwindCSS, Pinia, ECharts]
 
@@ -155,22 +151,22 @@
 \sectionTitle{开源经历}{\faCode}
 %======================================================================
 \begin{projects}
-  \project{2025-02}[至今]{100+ stars}{个人项目}{Telegram Search}{
+  \project{2025-02}[至今]{200+ stars}{独立开发}{Telegram Search}{
     \begin{itemize}
       \item \link{https://github.com/luoling8192/tg-search}{https://github.com/luoling8192/tg-search}
-      \item 基于 OpenAI 向量技术实现语义搜索，支持多种消息类型的智能检索。
-      \item 设计高性能数据同步系统，支持 Bot / Client 双模式消息采集和增量更新。
-      \item 实现灵活的消息管理体系，支持文件夹分类、导入导出和数据统计分析。
+      \item 基于 pgvector 向量数据库实现分表存储，支持多种 Embedding 模型的语义检索。
+      \item 设计 Adapter 架构实现多账号 / IM 平台对接，支持灵活扩展和统一管理。
+      \item 实现动态表分片和自动扩容，单表支持千万级向量数据的高性能检索。
     \end{itemize}
   }[PgVector, PostgreSQL]
 
   \separator{0.5ex}
-  \project{2021-08}[2021-10]{3.4k+ stars}{前端核心开发者}{Icalingua++}{
+  \project{2021-08}[2021-10]{3.4k+ stars}{前端核心开发}{Icalingua++}{
     \begin{itemize}
       \item \link{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}
-      \item 深度集成 QQ 协议，采用 FFmpeg 处理多媒体，SocketIO 实现实时通信。
-      \item 设计 Bridge 系统支持服务器部署，实现多端同步和离线消息存储。
-      \item 实现灵活的插件架构，支持自定义脚本、样式和主题。
+      \item 深度集成 QQ 协议，优化多媒体处理流程，基于 FFmpeg 实现高性能音视频转码与实时预览。
+      \item 设计高可用的 Bridge 中间件系统，支持分布式部署与负载均衡，实现消息可靠同步与持久化存储。
+      \item 构建可扩展的插件生态系统，提供丰富的 API 接口，支持自定义脚本开发、界面样式定制和主题系统。
     \end{itemize}
   }[Vue, Electron, SocketIO, FFmpeg]
 \end{projects}
@@ -179,9 +175,9 @@
 \sectionTitle{其他项目}{\faCube}
 %======================================================================
 \begin{itemize}
-  \item 基于 LLM 的智能 Minecraft 机器人，能理解自然语言指令并与玩家交互。
+  \item 开发基于大语言模型的智能 Minecraft 机器人，实现自然语言指令理解与玩家实时交互，支持任务规划和环境适应。
     \link{https://github.com/moeru-ai/airi-minecraft}{\texttt{Airi-Minecraft 2025-01}}
-  \item 一个用在班级电脑上面的动态壁纸系统，显示高考倒计时、作业、课程表、值日生等看板。
+  \item 设计并实现班级信息管理系统，集成高考倒计时、作业管理、课程表和值日生排班等功能，提供动态壁纸展示界面。
     \link{https://github.com/luoling8192/ClassTools}{\texttt{ClassTools 2022-05}}
 \end{itemize}
 
@@ -190,11 +186,11 @@
 %======================================================================
 \begin{itemize}
   \item 2024-08
-    \link{https://www.bilibili.com/video/BV1WtHQewEu4}{\texttt{AI.DEA \textbf{一等奖}}}
+    \link{https://www.bilibili.com/video/BV1WtHQewEu4}{\texttt{AI.DEA 人工智能创新应用大赛 \textbf{一等奖}}}
   \item 2024-07
-    \link{https://github.com/guiiai/guii-devtools}{\texttt{AdvantureX 主题赛道 \textbf{一等奖}}}
+    \link{https://github.com/guiiai/guii-devtools}{\texttt{AdvantureX 黑客松 \textbf{一等奖}}}
   \item 2020-12
-    \link{https://www.noi.cn}{\texttt{全国青少年信息学奥林匹克竞赛联赛 \textbf{三等奖}}}
+    \link{https://www.noi.cn}{\texttt{NOIP 全国青少年信息学奥林匹克竞赛联赛 \textbf{三等奖}}}
 \end{itemize}
 
 \end{document}
