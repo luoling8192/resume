@@ -86,41 +86,41 @@
     {至今}%
     {Go 高级开发工程师 @ 八位猫（上海）}%
     [\begin{itemize}
-      \item \textbf{区块链基础设施与微服务架构}
+      \item \textbf{区块链基础设施}
         \begin{itemize}
           \item 主导区块链基础设施建设，基于 Kubernetes 构建高可用多链节点集群，支持 Ethereum、Astar 等主流公链，通过多可用区部署与自动故障转移，实现系统可用性 99.99\%。
           \item 设计三层立体化告警机制，包括服务主动告警、日志智能分析及 K8s 健康检查，配合自动化运维脚本，将故障平均恢复时间（MTTR）优化至 5 分钟以内。
-          \item 优化跨语言 RPC 工作流，设计基于 GitHub Actions 的 Protobuf 自动化生成与同步方案，显著提升团队协作效率，降低接口维护成本。
+          \item 优化 gRPC 工作流，设计基于 GitHub Actions 的 Protobuf 自动化生成与同步方案，显著提升团队协作效率，降低接口维护成本。
           \item 推行测试驱动开发（TDD），构建完整测试工具链，包括数据库与缓存 Mock 框架，实现核心业务 95\% 测试覆盖率，生产环境故障率降低 70\%。
         \end{itemize}
-      \item \textbf{分布式事件处理系统}
+      \item \textbf{区块链交易系统}
         \begin{itemize}
           \item 设计高性能分布式队列中间件，基于 Fx 依赖注入与 Echo 框架，结合 Kafka 消息队列和 Redis 分布式缓存，实现可靠的事件处理，支撑日均百万级交易规模。
           \item 实现智能数据分片与多级缓存策略，优化查询性能提升 5 倍，将平均响应时间控制在 50ms 以内，大幅提升用户体验。
           \item 深度整合 OpenTelemetry 可观测性框架，实现全链路追踪与性能监控，配合 Swagger 自动化文档，研发效率提升 60\%。
-          \item 打造灵活的动态管理平台，支持 RBAC 权限控制与低代码表单配置，降低系统维护成本，提升业务响应效率。
           \item 构建端到端 DevOps 系统，实现从代码提交到生产部署的全流程自动化，通过金丝雀发布与自动回滚确保系统稳定性达 99.9\%。
         \end{itemize}
       \end{itemize}]
 \end{experiences}
+
 %======================================================================
 \sectionTitle{项目经历}{\faBriefcase}
 %======================================================================
 \begin{projects}
   \project{2024-07}[2024-12]{后端负责人}{\link{https://guii.ai}{https://guii.ai}}{Guii.AI}{
     \begin{itemize}
-      \item 一款 AI 驱动的前端开发工具，支持自然语言生成与调整界面，覆盖原型设计到细节优化的全流程。
-      \item 创新实现页面元素的选择与编辑功能，无需 IDE 集成即可无缝嵌入现有开发工具链，提升开发灵活性。
-      \item 在 2024 年 AdventureX 黑客松中荣获主题赛道一等奖及三项其他赛道一等奖，验证了技术与产品实力。
-      \item 作为后端核心开发者，负责提示词引擎、工作流系统及 Agent 编排的设计与实现，确保系统高效运行。
+      % \item 一款 AI 驱动前端开发工具，通过自然语言交互实现界面生成与优化，打造从原型设计到细节调优的一站式开发体验。
+      \item 设计 Agent 编排引擎，通过参数校验与结构化处理，实现了 Function Calling 能力。
+      \item 实现了项目组件的智能识别与文档抓取，构建组件知识库实现精准代码生成。
+      \item 构建企业级工作流引擎，基于 Redis 实现高可靠消息通信，配备完整的断线重连、消息持久化方案，通过任务编排与状态追踪将系统吞吐量提升至 10k QPS。
     \end{itemize}
-  }[HonoJS, Supabase, PostgreSQL, Redis, Drizzle, OpenRouter]
+  }[HonoJS, Supabase, PostgreSQL, Redis, Drizzle]
   \separator{0.5ex}
   \project{2024-02}[2024-05]{前端负责人}{\link{https://portforward.zeroteam.top}{https://portforward.zeroteam.top}}{PortForwardGo}{
     \begin{itemize}
-      \item 开发高性能流量转发管理平台，支持多协议转发与负载均衡，日活跃用户超 3000。
-      \item 设计模块化组件系统，实现动态界面生成，开发效率提升 70\%，维护成本大幅降低。
-      \item 基于 Vue3 构建现代化前端架构，集成 Pinia 状态管理、多渠道支付及实时数据可视化功能。
+      \item 基于 Vue3 构建现代化前端架构，采用组件化开发提升代码复用率，实现多渠道支付与服务器状态实时监控等核心功能。
+      \item 设计低代码表单引擎，支持后端动态表单生成与验证，通过可配置的组件库与数据管理接口，将表单开发效率提升 70\%。
+      \item 优化性能体验，引入 SSR 技术将首屏加载时间降低 60\%，结合全球 CDN 部署实现负载均衡，页面响应时间控制在 200ms 以内。
     \end{itemize}
   }[Vue3, Vite, NaiveUI, TailwindCSS, Pinia, ECharts]
   % \separator{0.5ex}
@@ -137,18 +137,16 @@
 \sectionTitle{开源经历}{\faCode}
 %======================================================================
 \begin{projects}
-  \project{2025-02}[至今]{200+ stars}{独立开发}{Telegram Search}{
+  \project{2025-02}[至今]{200+ stars}{\link{https://github.com/luoling8192/tg-search}{https://github.com/luoling8192/tg-search}}{Telegram Search}{
     \begin{itemize}
-      \item \link{https://github.com/luoling8192/tg-search}{https://github.com/luoling8192/tg-search}
-      \item 基于 pgvector 向量数据库实现分表存储，支持多种 Embedding 模型的高效语义检索。
-      \item 设计 Adapter 架构，支持多账号及 IM 平台对接，具备灵活扩展性与统一管理能力。
-      \item 实现动态表分片与自动扩容，单表支持千万级向量数据的高性能检索，满足大规模场景需求。
+      \item 基于 pgvector 向量数据库实现 Telegram 聊天记录的语义化搜索引擎，支持多维度相似度匹配与智能推荐，采用分表与分片策略优化数据结构，实现千万级会话数据的高效检索。
+      \item 设计可扩展的 Adapter 架构，实现多账号及主流 IM 平台的无缝对接，支持多种主流 Embedding 模型接入，提供统一的数据处理与管理接口。
+      \item 构建基于 WebSocket 的实时任务调度系统，实现任务优先级管理与并发控制，支持毫秒级进度反馈与状态同步。
     \end{itemize}
   }[PgVector, PostgreSQL]
   \separator{0.5ex}
-  \project{2021-08}[2021-10]{3.4k+ stars}{前端核心开发}{Icalingua++}{
+  \project{2021-08}[2021-10]{3.4k+ stars}{\link{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}}{Icalingua++}{
     \begin{itemize}
-      \item \link{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}{https://github.com/Icalingua-plus-plus/Icalingua-plus-plus}
       \item 深度集成 QQ 协议，优化多媒体处理流程，基于 FFmpeg 实现高效音视频转码与实时预览。
       \item 设计高可用 Bridge 中间件，支持分布式部署与负载均衡，确保消息同步的可靠性与持久化。
       \item 构建可扩展插件生态，提供丰富 API 接口，支持自定义脚本、界面样式及主题定制。
